@@ -1,133 +1,108 @@
-🚖 OLA Data Analyst Project
-📌 Project Overview
+# 🚖 OLA Data Analyst Project
 
-This project is an end-to-end Data Analytics case study based on ride-booking data for OLA, focusing on booking trends, cancellations, revenue, vehicle performance, and customer & driver ratings.
-The objective is to simulate a real-world business problem and derive actionable insights using SQL and Power BI.
+<p align="center">
+  <b>An End-to-End Data Analytics Case Study using SQL & Power BI</b><br>
+  <i>Focused on ride trends, cancellations, revenue, and customer behavior</i>
+</p>
 
-The dataset represents 1 month of ride data for Bengaluru city, containing over 100,000 records with realistic constraints on booking success, cancellations, and ride behavior.
+---
 
-🎯 Objectives
+## 📌 Project Overview
+This project is an **end-to-end Data Analytics case study** based on ride-booking data for **OLA**.  
+It analyzes booking trends, cancellations, revenue patterns, vehicle performance, and customer & driver ratings.
 
-Analyze ride booking patterns and trends over time
+The dataset simulates **real-world ride data for Bengaluru city over one month**, containing **100,000+ records** with realistic business constraints.
 
-Understand cancellation behavior (customer & driver)
+---
 
-Evaluate revenue distribution and payment methods
+## 🎯 Project Objectives
+- 📊 Analyze ride volume and booking trends over time  
+- ❌ Understand customer & driver cancellation behavior  
+- 💰 Evaluate revenue and payment method distribution  
+- 🚗 Compare vehicle types by distance, ratings, and performance  
+- 📈 Build interactive dashboards for business insights  
 
-Compare vehicle types based on distance, ratings, and performance
+---
 
-Build interactive dashboards for business decision-making
+## 🛠️ Tools & Technologies
+| Tool | Purpose |
+|----|----|
+| **SQL** | Data querying, views & analysis |
+| **Power BI** | Dashboards & data visualization |
+| **Excel / CSV** | Data generation & preprocessing |
+| **GitHub** | Version control & documentation |
 
-🛠️ Tools & Technologies Used
+---
 
-SQL – Data querying, views, and analysis
-
-Power BI – Interactive dashboards & visualizations
-
-Excel / CSV – Data generation & preprocessing
-
-GitHub – Version control & project documentation
-
-📂 Dataset Description
-
+## 📂 Dataset Details
 The dataset includes the following key columns:
 
-Date, Time
+- Date, Time  
+- Booking_ID, Booking_Status  
+- Customer_ID  
+- Vehicle_Type (Auto, Mini, Prime Sedan, Prime SUV, Bike, eBike, Prime Plus)  
+- Pickup_Location, Drop_Location  
+- Avg VTAT, Avg CTAT  
+- Cancelled Rides (Customer & Driver)  
+- Incomplete Rides & Reasons  
+- Booking_Value  
+- Payment_Method  
+- Ride_Distance  
+- Driver_Ratings, Customer_Rating  
 
-Booking_ID, Booking_Status
+### 📊 Business Rules Applied
+- ✅ Successful bookings ≈ **62%**  
+- ❌ Customer cancellations ≤ **7%**  
+- ❌ Driver cancellations ≤ **18%**  
+- ⚠️ Incomplete rides ≤ **6%**  
+- 📈 Higher booking value on weekends  
 
-Customer_ID
+---
 
-Vehicle_Type (Auto, Mini, Prime Sedan, Prime SUV, Bike, eBike, Prime Plus)
+## 🧮 SQL Analysis
+SQL queries and **views** were created to answer key business questions:
 
-Pickup_Location, Drop_Location
+- Retrieve all successful bookings  
+- Average ride distance per vehicle type  
+- Total customer & driver cancellations  
+- Top 5 customers by number of rides  
+- Total revenue from completed rides  
+- Ratings analysis for Prime Sedan bookings  
 
-Avg VTAT, Avg CTAT
+✔️ Views are used for **clean, reusable analysis**.
 
-Cancelled Rides (Customer & Driver)
+---
 
-Incomplete Rides & Reasons
+## 📊 Power BI Dashboard Structure
 
-Booking_Value
+### 🔹 Overall
+- Ride Volume Over Time  
+- Booking Status Breakdown  
 
-Payment_Method
+### 🔹 Vehicle Type
+- Top 5 Vehicle Types by Ride Distance  
 
-Ride_Distance
+### 🔹 Revenue
+- Revenue by Payment Method  
+- Top 5 Customers by Total Booking Value  
+- Ride Distance Distribution per Day  
 
-Driver_Ratings, Customer_Rating
+### 🔹 Cancellation
+- Customer Cancellation Reasons  
+- Driver Cancellation Reasons  
 
-📊 Business Rules Applied:
+### 🔹 Ratings
+- Driver Ratings Distribution  
+- Customer Ratings Distribution  
+- Customer vs Driver Ratings  
 
-Successful bookings ≈ 62%
+---
 
-Customer cancellations ≤ 7%
+## 🔍 Key Insights
+- 📅 Weekends generate higher ride volume and revenue  
+- 🚘 Prime Sedan & SUV dominate long-distance rides  
+- ❌ Cancellation reasons differ significantly between customers and drivers  
+- ⭐ Higher driver ratings strongly impact customer satisfaction  
 
-Driver cancellations ≤ 18%
+---
 
-Incomplete rides ≤ 6%
-
-Higher order value on weekends
-
-🧮 SQL Analysis
-
-The project includes SQL queries and views to answer key business questions such as:
-
-Successful bookings analysis
-
-Average ride distance per vehicle type
-
-Cancellation trends (customer & driver)
-
-Top 5 customers by number of rides
-
-Revenue from completed bookings
-
-Ratings analysis by vehicle type
-
-📁 SQL views are created for reusable and structured querying.
-
-📊 Power BI Dashboard
-
-The Power BI report is divided into 5 major sections:
-
-1️⃣ Overall
-
-Ride Volume Over Time
-
-Booking Status Breakdown
-
-2️⃣ Vehicle Type
-
-Top 5 Vehicle Types by Ride Distance
-
-3️⃣ Revenue
-
-Revenue by Payment Method
-
-Top 5 Customers by Total Booking Value
-
-Ride Distance Distribution per Day
-
-4️⃣ Cancellation
-
-Customer Cancellation Reasons
-
-Driver Cancellation Reasons
-
-5️⃣ Ratings
-
-Driver Ratings Distribution
-
-Customer Ratings Distribution
-
-Customer vs Driver Ratings Comparison
-
-🔍 Key Insights
-
-Weekends show higher ride volume and booking value
-
-Certain vehicle types dominate long-distance travel
-
-Cancellation reasons vary significantly between customers and drivers
-
-Strong correlation observed between driver ratings and customer satisfaction
