@@ -1,4 +1,4 @@
-# 🚖 OLA Data Analyst Project
+# 🚖 OLA Project
 
 <p align="center">
   <b>An End-to-End Data Analytics Case Study using SQL & Power BI</b><br>
